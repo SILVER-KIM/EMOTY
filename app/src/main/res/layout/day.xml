@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/day_cell_ll_background"
+    android:layout_width="45dp"
+    android:layout_height="53dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- 날짜 -->
+        <TextView
+            android:id="@+id/cell_day"
+            android:textSize="13dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sungsil"
+            android:text="00"
+            android:visibility="visible"/>
+        <!-- /날짜 -->
+
+        <ImageView
+            android:id="@+id/calendar_emotion"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/cell_day"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/smilemoty"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+</LinearLayout>

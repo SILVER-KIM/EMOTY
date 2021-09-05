@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="240dp"
+    tools:context=".WriteTimeCapsuleActivity"
+    android:background="#FFF"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:background="#F29661">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="언제 오픈하시겠습니까?"
+            android:fontFamily="@font/sungsil"
+            android:textSize="17dp"
+            android:textColor="#000"
+            android:paddingLeft="10dp"
+            android:gravity="center_horizontal"/>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <DatePicker
+            android:id="@+id/datePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner"
+            android:theme="@android:style/Theme.Holo.Light" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/openDate"
+            android:fontFamily="@font/sungsil"
+            android:text="openday"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="15dp"
+            android:layout_marginBottom="5dp" />
+
+        <ImageButton
+            android:id="@+id/lock"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/heartlock"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:layout_gravity="center"
+            android:layout_margin="5dp" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical">
+
+            <ImageButton
+                android:id="@+id/search_showEmoty"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/emoty"
+                android:scaleType="fitCenter"
+                android:background="#00fff000"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:id="@+id/search_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sungsil"
+                android:layout_toRightOf="@+id/search_showEmoty"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="30dp"
+                android:text="2020년 5월 19일 화요일" />
+
+            <TextView
+                android:id="@+id/search_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/search_showEmoty"
+                android:layout_below="@+id/search_day"
+                android:fontFamily="@font/sungsil"
+                android:textSize="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                android:text="제목입니다." />
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

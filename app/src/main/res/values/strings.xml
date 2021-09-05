@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Diary</string>
+    <string name="subtitle">Diary</string>
+    <string name="title_activity_diary">DiaryActivity</string>
+    <string name="title_diary">diary</string>
+    <string name="title_calendar">calendar</string>
+    <string name="title_graph">search</string>
+    <string name="title_activity_time_casule">TimeCasuleActivity</string>
+    <string name="title_map">map</string>
+    <string name="title_close">close</string>
+    <string name="title_open">open</string>
+    <string name="image_warning">이미지가 열리지 않습니다.</string>
+</resources>

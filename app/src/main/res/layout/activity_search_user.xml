@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.graph.GraphFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:background="@drawable/search_back"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/emoty"/>
+
+        <FrameLayout
+            android:layout_width="330dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="6dp">
+
+            <EditText
+                android:id="@+id/search_id"
+                android:layout_width="330dp"
+                android:layout_height="55dp"
+                android:hint="검색어를 입력해주세요."
+                android:textColor="#000"
+                android:fontFamily="@font/sungsil"
+                android:textSize="20dp"
+                android:textColorHint="#000"
+                android:background="@drawable/search_round"
+                android:paddingLeft="15dp"
+                android:layout_gravity="center_vertical"/>
+
+            <ImageButton
+                android:id="@+id/search_user_btn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/analysis"
+                android:background="#00fff000"
+                android:scaleType="fitCenter"
+                android:layout_marginLeft="290dp"
+                android:layout_gravity="center_vertical"/>
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/search_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <ImageButton
+            android:id="@+id/addBTN"
+            android:scaleType="fitCenter"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:src="@drawable/happyemoty"
+            android:background="#00fff000"/>
+
+        <TextView
+            android:id="@+id/search_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="ID입니다."
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:textColor="#000"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

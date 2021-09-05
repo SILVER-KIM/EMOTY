@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="180dp"
+    tools:context=".ChangeEmotionDialog"
+    android:background="#FFF"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:background="#F29661">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="변경할 감정을 선택해주세요"
+            android:fontFamily="@font/sungsil"
+            android:textSize="17dp"
+            android:textColor="#000"
+            android:paddingLeft="10dp"
+            android:gravity="center"/>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/happy"
+            android:layout_margin="20dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/happyemoty"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:layout_gravity="center"/>
+
+
+        <ImageButton
+            android:id="@+id/question"
+            android:layout_width="55dp"
+            android:layout_margin="20dp"
+            android:layout_height="55dp"
+            android:src="@drawable/question"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:layout_gravity="center"/>
+
+
+        <ImageButton
+            android:id="@+id/bujung"
+            android:layout_margin="20dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/bujungemoty"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:layout_gravity="center"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

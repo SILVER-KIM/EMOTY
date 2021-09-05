@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <!-- date toolbar -->
+    <LinearLayout
+        android:id="@+id/header_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:paddingBottom="12dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp">
+
+        <!-- prev button -->
+        <ImageButton
+            android:id="@+id/calendar_prev_button"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:gravity="center"
+            android:scaleType="fitCenter"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="20dp"
+            android:background="@android:color/transparent"
+            android:tint="#8C8C8C"
+            android:onClick="calendar_prev_button"
+            android:src="@drawable/previous_icon" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <!-- date title -->
+        <TextView
+            android:id="@+id/calendar_date_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#222222"
+            android:textSize="22dp"
+            android:fontFamily="@font/sungsil"
+            android:text="2020년 6월"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <!-- next button -->
+        <ImageButton
+            android:id="@+id/calendar_next_button"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            android:scaleType="fitCenter"
+            android:background="@android:color/transparent"
+            android:tint="#8C8C8C"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/next_icon"/>
+
+    </LinearLayout>
+
+    <!-- days header -->
+    <LinearLayout
+        android:id="@+id/calendar_header"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:background="#EAEAEA"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="일"
+            android:textSize="17dp"
+            android:fontFamily="@font/sungsil"
+            android:textColor="#FF0000"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="월"
+            android:textSize="17dp"
+            android:fontFamily="@font/sungsil"
+            android:textColor="#000"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="화"
+            android:textSize="17dp"
+            android:fontFamily="@font/sungsil"
+            android:textColor="#000"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="수"
+            android:textSize="17dp"
+            android:fontFamily="@font/sungsil"
+            android:textColor="#000"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="목"
+            android:textSize="17dp"
+            android:fontFamily="@font/sungsil"
+            android:textColor="#000"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="금"
+            android:textSize="17dp"
+            android:fontFamily="@font/sungsil"
+            android:textColor="#000"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="토"
+            android:textSize="17dp"
+            android:fontFamily="@font/sungsil"
+            android:textColor="#0100FF"/>
+
+    </LinearLayout>
+
+    <!-- days view -->
+    <GridView
+        android:id="@+id/calendar_grid"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:numColumns="7"
+        android:stretchMode="columnWidth"
+        android:listSelector="@drawable/gridview_selector"/>
+
+</LinearLayout>

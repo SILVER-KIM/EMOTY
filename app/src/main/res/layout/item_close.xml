@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/type"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:fontFamily="@font/sungsil"
+            android:layout_toRightOf="@+id/type"
+            android:textSize="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:text="title" />
+
+        <TextView
+            android:id="@+id/closeDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/type"
+            android:layout_below="@+id/title"
+            android:fontFamily="@font/sungsil"
+            android:textSize="15dp"
+            android:layout_marginLeft="30dp"
+            android:text="closeDay" />
+
+        <TextView
+            android:id="@+id/openDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/type"
+            android:layout_below="@+id/closeDay"
+            android:fontFamily="@font/sungsil"
+            android:textSize="15dp"
+            android:layout_marginLeft="30dp"
+            android:text="openDay" />
+
+
+        <TextView
+            android:id="@+id/j"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:fontFamily="@font/sungsil"
+            android:textSize="15dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginRight="45dp"
+            android:text="D-DAY"/>
+
+        <TextView
+            android:id="@+id/Dday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/j"
+            android:layout_below="@id/j"
+            android:fontFamily="@font/sungsil"
+            android:textSize="20dp"
+            android:text="D-DAY"/>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical">
+
+        <ImageButton
+            android:id="@+id/unlock"
+            android:src="@drawable/unlock"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:layout_gravity="end"
+            android:layout_marginRight="45dp"
+            android:visibility="invisible" />
+    </FrameLayout>
+
+</FrameLayout>

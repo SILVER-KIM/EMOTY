@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.diary">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/emoty"
+        android:label="EMOTY"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/emoty"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        android:networkSecurityConfig="@xml/network_security_config">
+        <activity android:name=".SearchUserActivity"
+            android:theme="@style/AppTheme.NoActionBar" ></activity>
+        <activity
+            android:name=".ShowDiaryActivity"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name=".WriteDiaryActivity"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name=".ui.show.ShowRecordActivity"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name=".ui.show.ShowTextActivity"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name=".ChangeEmotyActivity"
+            android:theme="@android:style/Theme.Holo.Dialog" />
+        <activity
+            android:name=".DatePickerActivity"
+            android:theme="@android:style/Theme.Holo.Dialog" />
+        <activity
+            android:name=".WriteTimeCapsuleActivity"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name=".RecordingActivity"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name=".SelectTimeCapsuleActivity"
+            android:theme="@android:style/Theme.Holo.Dialog" />
+        <activity android:name=".DetailJoinActivity" />
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@android:style/Theme.Holo.Dialog" />
+        <activity
+            android:name=".JoinActivity"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name=".TimeCasuleActivity"
+            android:label="@string/title_activity_time_casule"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DiaryActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".HomeActivity"
+            android:noHistory="true"
+            android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@android:style/Theme.NoTitleBar" />
+
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="b932b215ae03d9408ccee570436cb570" />
+    </application>
+
+</manifest>

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RecordingActivity"
+    android:background="#FFF">
+
+    <TextView
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:fontFamily="@font/sungsil"
+        android:textColor="#000"
+        android:text="타임캡슐"
+        android:textSize="30dp"
+        android:gravity="center_horizontal"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+        <ImageView
+            android:id="@+id/tape"
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            android:layout_gravity="center"
+            android:src="@drawable/mic"/>
+
+        <EditText
+            android:id="@+id/title"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:hint="타임캡슐의 제목을 작성해주세요."
+            android:textColorHint="#000"
+            android:fontFamily="@font/sungsil"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:singleLine="true"
+            android:background="#00ff0000"/>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:layout_width="340dp"
+        android:layout_height="130dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+        <ImageButton
+            android:id="@+id/play"
+            android:layout_width="60dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/unplay"
+            android:scaleType="fitCenter"
+            android:background="#00ff0000"/>
+
+        <ImageButton
+            android:id="@+id/stop"
+            android:layout_width="60dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/unstop"
+            android:scaleType="fitCenter"
+            android:background="#00ff0000"/>
+
+        <ImageButton
+            android:id="@+id/record"
+            android:layout_width="60dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/unrecord"
+            android:scaleType="fitCenter"
+            android:background="#00ff0000"/>
+
+        <ImageButton
+            android:id="@+id/save"
+            android:layout_width="60dp"
+            android:layout_height="100dp"
+            android:src="@drawable/unsave"
+            android:scaleType="fitCenter"
+            android:background="#00ff0000"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:fontFamily="@font/sungsil"
+            android:textColor="#000"
+            android:text="재생"
+            android:gravity="center_horizontal"
+            android:textSize="15dp"
+            android:layout_marginRight="20dp"/>
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:fontFamily="@font/sungsil"
+            android:gravity="center_horizontal"
+            android:textColor="#000"
+            android:text="멈춤"
+            android:textSize="15dp"
+            android:layout_marginRight="20dp"/>
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:fontFamily="@font/sungsil"
+            android:gravity="center_horizontal"
+            android:textColor="#000"
+            android:text="녹음"
+            android:textSize="15dp"
+            android:layout_marginRight="20dp"/>
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:fontFamily="@font/sungsil"
+            android:gravity="center_horizontal"
+            android:textColor="#000"
+            android:text="저장"
+            android:textSize="15dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <ImageButton
+                android:id="@+id/changeDate"
+                android:layout_gravity="center"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="#00fff000"
+                android:src="@drawable/calendarbtn"
+                android:scaleType="fitCenter"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:id="@+id/today_Date"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/sungsil"
+                android:textSize="15dp"
+                android:textColor="#000"/>
+
+            <TextView
+                android:id="@+id/mul"
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/sungsil"
+                android:textSize="15dp"
+                android:textColor="#000"/>
+
+            <TextView
+                android:id="@+id/lock_Date"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="@font/sungsil"
+                android:textSize="15dp"
+                android:textColor="#000"/>
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/lockBTN"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#00fff000"
+            android:src="@drawable/calendarbtn"
+            android:scaleType="fitCenter"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="75dp"/>
+
+    </FrameLayout>
+</LinearLayout>

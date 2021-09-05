@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="300dp"
+    android:background="@drawable/round_popup"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/save_cancle"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="260dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/cancel"/>
+
+    <ImageView
+        android:id="@+id/save_image"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/happyemoty"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:text="일기를 저장하시겠어요?"
+        android:fontFamily="@font/sungsil"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20dp"/>
+
+    <Button
+        android:id="@+id/save_diary"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:background="@drawable/round_btn"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="YES"
+        android:textColor="#FFF"
+        android:fontFamily="@font/sungsil"
+        android:textSize="18dp"/>
+
+
+</LinearLayout>

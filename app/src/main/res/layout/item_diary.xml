@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical">
+        <TextView
+            android:id="@+id/diary_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sungsil"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="19"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/diary_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sungsil"
+            android:textSize="20dp"
+            android:text="화"
+            android:layout_below="@id/diary_day"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/diary_today"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sungsil"
+            android:layout_toRightOf="@+id/diary_day"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="30dp"
+            android:text="2020년 5월 19일 화요일" />
+
+        <TextView
+            android:id="@+id/diary_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/diary_day"
+            android:layout_below="@+id/diary_today"
+            android:fontFamily="@font/sungsil"
+            android:textSize="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:text="제목입니다." />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical">
+
+        <ImageButton
+            android:id="@+id/diary_emotion"
+            android:src="@drawable/smilemoty"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:layout_gravity="end"
+            android:layout_marginRight="20dp"/>
+
+    </FrameLayout>
+
+
+</FrameLayout>
